@@ -6,8 +6,8 @@ while (Supports.Health!=0 && Winston.Health!=0)
     Console.WriteLine("Winston's Health: " + Winston.Health + 
                      "\nSupports's Health: " + Supports.Health);
     
-    Winston.Health-=10;
-    Supports.Health-=20;
+    Winston.Health-=Supports.Damage;
+    Supports.Health-=Winston.Damage;
 
     Console.ReadLine();
 }
